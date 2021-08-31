@@ -1,0 +1,260 @@
+@-moz-document domain("veracross.com") {
+:root {
+--dark-background: #3a3943;
+--darker-background:#2a2c39;
+--darkest-background: #1b1d23;
+--font-light:#fff;
+--font-lighter: #fff;
+--font-darker:#e9e9f4;
+--font-label: #cfd0eb;
+--home-border: #454650;
+--emphasis-border: #9397a7;
+--blue-night:  #0e7fff; /* #3951df */
+--selected-background: #05acff;
+--urgent: #ea5c3c;
+}
+
+/* Website */
+
+a {
+    color: var(--font-darker);
+}
+
+.portal-background {
+    background-image: url(https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2250&q=80);
+}
+
+body {
+    background-color: var(--darkest-background);
+}
+
+.vx-portal-nav__item:hover .vx-portal-nav__item-link, .vx-portal-nav__item-link:hover, .vx-portal-nav__item-link:focus {
+    background-color: var(--darkest-background);
+    color: var(--font-light);
+}
+
+.vx-hover-menu {
+    background-color: var(--darkest-background);
+}
+
+.vx-hover-menu a {
+    color: var(--font-light) !important;
+}
+
+/* Home */
+
+.app-container {
+    background-color: var(--darkest-background);
+}
+
+h1, h2, h3, h4, h5, h6, .vx-heading-1, .vx-heading-2, .vx-heading-3, .vx-heading-4, .vx-heading-5, .vx-heading-6 {
+    color: var(--font-darker) !important;
+}
+
+.vx-subtitle {
+    color: var(--font-light);
+}
+
+.student-overview .reports .report-group a {
+    color: var(--blue-night);
+}
+
+.vx-page-tabs, .vx-list__item  {
+    border-color: var(--home-border) !important;
+}
+
+.student-overview .course-links a {
+    color: var(--font-light);
+}
+
+.student-overview .course-description {
+    color: var(--font-light);
+}
+
+.vx-tag {
+    color: var(--font-label);
+}
+
+.student-overview .assignments-link {
+    color: var(--font-light);
+}
+
+.student-overview .notifications-link {
+    color: var(--font-darker);
+}
+
+.vx-tab-bar__tab--active::after {
+    background-color: var(--emphasis-border);
+}
+
+.vx-page-tabs__tab:hover {
+    background-color: var(--darker-background);
+}
+
+.vx-page-tabs__tab--active {
+    background:  var(--dark-background);
+    border-color: var(--home-border);
+}
+
+.vx-page-tabs__tab:hover a, .vx-page-tabs__tab--active, .vx-page-tabs__tab--active a {
+    color: var(--font-darker);
+}
+
+.vx-page-tabs__tab {
+    border-color: var(--home-border);
+}
+
+.vx-page-tabs__tab a {
+    color: var(--font-light);
+}
+
+/* Schedule */
+.daily-schedule .vx-schedule-item  {
+    border-color: var(--home-border);
+}
+
+.daily-schedule .item-time  {
+    color: var(--font-light);
+}
+
+.daily-schedule .item-main-description {
+    color: var(--font-light);
+}
+
+.vx-button {
+    border-color: var(--home-border);
+}
+
+.daily-schedule .schedule-type-selection .vx-button--active {
+    background-color: var(--selected-background);
+}
+
+.daily-schedule .now-indicator {
+    color: var(--urgent);
+}
+
+.vx-button-group .vx-button:last-child:not(:first-child) {
+    background-color:  var(--dark-background);
+    color: var(--font-light);
+}
+
+.vx-button-group .vx-button:first-child:not(:last-child) {
+    background: var(--dark-background);
+    color: var(--font-light);
+}
+
+.vx-button-group .vx-button:not(:first-child):not(:last-child) {
+    background: var(--dark-background);
+    color: var(--font-light);
+}
+
+.daily-schedule .day-number {
+    color: var(--font-light);
+}
+
+.daily-schedule .day-week {
+    color:  var(--font-darker);
+}
+
+border-bottom {
+    border-color: var(--home-border);
+}
+
+/* Assignments */
+
+.container .content {
+    background-color: var(--darkest-background) !important;
+    color: var(--font-light);
+}
+
+.vx-tab-bar, .vx-tab-bar__tab--active {
+    background-color: var(--darkest-background) !important;
+    color: var(--font-light);
+    border: none;
+}
+
+#planner.timeline .assignment .assignment-type{
+    background-color: var(--darker-background) !important;
+    text-shadow: none;
+}
+
+#planner.timeline .assignment  {
+    border: none;
+    box-shadow: none !important;
+}
+
+.timeline-table, .timeline .timeline-records {
+    background-color: var(--darkest-background) !important;
+}
+
+.timeline .timeline-cell.current {
+    background-color: var(--dark-background)!important;
+}
+
+.timeline .timeline-row {
+    border-color: var(--home-border);
+}
+
+#planner.timeline .timeline-row.header {
+    background-color: var(--darker-background);
+    color: var(--font-light) !important;
+    border-color: var(--home-border);
+}
+
+.timeline .timeline-header-y {
+    background-color: var(--darker-background);
+    color: var(--font-light);
+    box-shadow: none;
+}
+
+.timeline .timeline-header-x{
+    box-shadow: none;
+}
+
+#planner.timeline .timeline-header-y .tools a {
+    color: inherit;
+}
+
+#planner.timeline .timeline-header-y .subtitle {
+    color: var(--font-darker);
+}
+
+#planner.timeline .timeline-row.header h4{
+    color: inherit;
+}
+
+.vx-tab-bar__tab{
+    color: inherit;
+    border-color: var(--home-border);
+}
+
+.vx-tab-bar__tab:hover {
+    background-color: var(--dark-background);
+    color: var(--blue-night);
+}
+
+body.chromeless .container {
+    border-color: var(--home-border);
+}
+
+.timeline .timeline-cell.divider {
+    border-color: var(--home-border) !important;
+}
+
+#planner.timeline .timeline-header-y .title,#planner.timeline .timeline-header-y .title:hover {
+    opacity: 0.8;
+}
+
+#planner.timeline .timeline-header-y .title {
+    color: var(--blue-night) !important;
+}
+
+#planner.timeline .timeline-header-y .tools a:hover {
+    color: var(--blue-night) !important;
+}
+
+#planner.timeline .timeline-controls ul.navigate a {
+    color:  var(--blue-night)!important;
+}
+
+}
