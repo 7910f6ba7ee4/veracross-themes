@@ -12,6 +12,8 @@
 --blue-night:  #0e7fff; /* #3951df */
 --selected-background: #05acff;
 --urgent: #ea5c3c;
+--completed-background: #10771e;
+--warning-background: #db9105de;
 }
 
 /* Website */
@@ -39,6 +41,10 @@ body {
 
 .vx-hover-menu a {
     color: var(--font-light) !important;
+}
+
+html {
+    background-color: var(--dark-background)!important;
 }
 
 /* Home */
@@ -123,6 +129,7 @@ h1, h2, h3, h4, h5, h6, .vx-heading-1, .vx-heading-2, .vx-heading-3, .vx-heading
 
 .vx-button {
     border-color: var(--home-border);
+    background: none;
 }
 
 .daily-schedule .schedule-type-selection .vx-button--active {
@@ -134,7 +141,13 @@ h1, h2, h3, h4, h5, h6, .vx-heading-1, .vx-heading-2, .vx-heading-3, .vx-heading
 }
 
 .vx-button-group .vx-button:last-child:not(:first-child) {
-    background-color:  var(--dark-background);
+    background-color:  var(--selected-background);
+    color: var(--font-light);
+}
+
+.vx-button-group .vx-button:last-child:not(:first-child):hover {
+    background: var(--selected-background);
+    opacity: 0.8;
     color: var(--font-light);
 }
 
@@ -160,7 +173,42 @@ border-bottom {
     border-color: var(--home-border);
 }
 
+.daily-schedule .schedule a {
+    color: var(--font-darker);
+}
+
+.daily-schedule .day-selection {
+    border-color: var(--home-border);
+}
+
+
+/* Recent Activity */
+
+.recent-updates .vx-list__item:hover {
+    background-color: var(--darker-background);
+    color:  var(--font-light);
+}
+
+.recent-updates .vx-list__item {
+    color:  var(--font-light);
+}
+
+.vx-list__group-header {
+    border-color:  var(--home-border);
+}
+
+.vx-list__item {
+    border-color:  var(--home-border);
+}
+
+
 /* Assignments */
+
+#planner.timeline .timeline-row.header .count {
+    background-color: var(--dark-background);
+    border-color: var(--home-border);
+    color: var(--font-light)  !important;
+}
 
 .container .content {
     background-color: var(--darkest-background) !important;
@@ -256,5 +304,179 @@ body.chromeless .container {
 #planner.timeline .timeline-controls ul.navigate a {
     color:  var(--blue-night)!important;
 }
+
+/* Submissions */
+.assignment-submission .sidebar {
+    background-color: var(--darker-background);
+    color: var(--font-light);
+}
+
+.assignment-submission .vx-record-header {
+    background-color: var(--darkest-background);
+    border-color: var(--home-border);
+}
+
+.assignment-submission .assignment{
+    color: var(--font-light);
+}
+
+.vx-record-detail {
+    border-color: var(--home-border);
+}
+
+.vx-data-field_content {
+    color: var(--font-light);
+}
+
+.assignment-submission .assignment-submit .submit-confirmation-banner {
+    background-color: var(--completed-background);
+    border-color: var(--home-border);
+}
+
+.vx-empty-state-read-only{
+    color: var(--font-light);
+}
+
+.vx-form-control .vx-text-field__input, .vx-form-control .vx-date-field__input, .vx-form-control .vx-time-field__input, .vx-form-control .vx-number-field__input, .vx-form-control .vx-search-field__input, .vx-form-control .vx-text-area__input {
+    background-color: var(--background-dark);
+    border-color: var(--home-border);
+}
+
+.vx-message-banner--danger {
+    background-color: var(--urgent);
+    color: var(--font-light);
+}
+
+.vx-tag--success, .vx-tag--green {
+    background-color: var(--completed-background);
+    color: var(--font-darker);
+}
+
+.vx-tag--warning, .vx-tag--yellow {
+    background-color: var(--warning-background);
+}
+
+.assignment-submission .attach-button {
+    color: var(--font-light);
+}
+
+.assignment-submission .attach-button:hover {
+    background: var(--dark-background);
+}
+
+.vx-button--primary:hover {
+    color: var(--font-light);
+    background: var(--selected-background);
+}
+
+.vx-switch__input[disabled] + .vx-switch__slider, .vx-switch--disabled {
+    background: var(--dark-background);
+    opacity: 0.8;
+}
+
+[data-uppy-drag-drop-supported="true"] .uppy-Dashboard-AddFiles {
+    background: var(--darker-background);
+}
+
+.uppy-Root, .uppy-Dashboard-AddFiles-title {
+    color: var(--font-light) !important;
+}
+
+.uppy-Dashboard-note{
+    color:  var(--font-darker);
+}
+
+.uppy-Dashboard-browse {
+    color: var(--blue-night);
+}
+
+.uppy-Dashboard-inner {
+    border-color: var(--home-border) !important;
+    background: var(--home-border);
+}
+
+.uppy-DashboardContent-bar {
+    border: none;
+    background: var(--dark-background);
+    color: var(--font-light);
+}
+
+.uppy-StatusBar {
+    background: var(--dark-background);
+    color: var(--font-light) !important;
+}
+
+.uppy-StatusBar-content {
+    color: var(--font-light) !important;
+}
+
+.uppy-size--md .uppy-Dashboard-files {
+    background: var(--darker-background)
+}
+
+.vx-message-banner--success {
+    background: var(--completed-background);
+    color: var(--font-light);
+    opacity: 0.7;
+}
+
+/* Calendar */
+
+.screen-toolbar{
+    background: var(--darkest-background);
+}
+
+.screen-title {
+    color: var(--font-light);
+}
+
+.fc-toolbar {
+    color: var(--font-light);
+    background: var(--darkest-background);
+}
+
+.fc-view-container {
+    color: var(--font-light);
+    background: var(--darkest-background);
+}
+
+.fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: var(--home-border);
+}
+
+.control-calendar .fc-view th {
+    background: var(--darkest-background)  !important;
+    color: var(--font-dark);
+}
+
+.control-calendar .fc-unthemed .fc-day.fc-today {
+    background:  var(--darker-background);
+}
+
+.fc-toolbar.fc-header-toolbar {
+    margin: 0;
+}
+
+.control-calendar .fc-toolbar .fc-button {
+    background: var(--darker-background);
+    color: var(--font-light);
+}
+
+.control-calendar .fc-toolbar .fc-button:hover {
+    background: var(--dark-background);
+}
+
+.fc-icon-right-single-arrow::after, .fc-icon-left-single-arrow::after {
+    color: var(--font-light);
+}
+
+.control-calendar .fc-day-grid-event .fc-time {
+    color:  var(--font-darker) !important;
+}
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    color: var(--font-darker);
+}
+
 
 }
