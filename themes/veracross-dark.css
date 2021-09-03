@@ -3,14 +3,19 @@
 --dark-background: #3a3943;
 --darker-background:#2a2c39;
 --darkest-background: #1b1d23;
+--green-background: #0f5718;
 --font-light:#fff;
 --font-lighter: #fff;
 --font-darker:#e9e9f4;
+--font-darkest: #b5b5c4;
 --font-label: #cfd0eb;
 --home-border: #454650;
 --emphasis-border: #9397a7;
 --blue-night:  #0e7fff; /* #3951df */
+--blue-day: #38afff;
 --selected-background: #05acff;
+--lavender-background: #a999de;
+--aqua-background: #0f7cbf;
 --urgent: #ea5c3c;
 --completed-background: #10771e;
 --warning-background: #db9105de;
@@ -18,8 +23,16 @@
 
 /* Website */
 
+p {
+    color: var(--font-light) !Important;
+}
+
 a {
     color: var(--font-darker);
+}
+
+a:hover{
+    color: var(--selected-background);
 }
 
 .portal-background {
@@ -204,6 +217,10 @@ border-bottom {
 
 /* Assignments */
 
+.vx-tag--primary, .vx-tag--blue {
+    background: var(--aqua-background);
+}
+
 #planner.timeline .timeline-row.header .count {
     background-color: var(--dark-background);
     border-color: var(--home-border);
@@ -367,6 +384,7 @@ body.chromeless .container {
 .vx-button--primary:hover {
     color: var(--font-light);
     background: var(--selected-background);
+    transition: all 0.3s ease-out;
 }
 
 .vx-switch__input[disabled] + .vx-switch__slider, .vx-switch--disabled {
@@ -477,6 +495,269 @@ body.chromeless .container {
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
     color: var(--font-darker);
 }
+
+/* Pop-up Student */
+
+
+.vx-account-info {
+    border-color: var(--home-border);
+    color: var(--font-light);
+}
+
+.vx-account-modal .vx-page-tabs__tab--active, .vx-account-modal .vx-page-tabs__tab--active:hover {
+    background-color: var(--dark-background);
+}
+
+.vx-account-modal .vx-page-tabs__tab--active, .vx-account-modal .vx-page-tabs__tab--active {
+    background-color: var(--darker-background);
+}
+
+.vx-account-modal .vx-page-tabs__tab:hover {
+    background-color: var(--dark-background);
+}
+
+.vx-account-modal .vx-page-tabs__tab:hover span, .vx-account-modal .vx-page-tabs__tab--active, .vx-account-modal .vx-page-tabs__tab--active span {
+    color: var(--font-darker);
+}
+
+.vx-account-modal__content, .vx-account-modal {
+    background-color: var(--darker-background);
+}
+
+.vx-account-modal__instructions {
+    color: var(--font-light);
+}
+
+.vx-button {
+    color: var(--font-light);
+    border-color: var(--home-border);
+}
+
+.vx-portal-list__portal {
+    background: transparent;
+    
+}
+
+.vx-portal-list__portal-description {
+    color: var(--font-light);
+}
+
+.vx-portal-list__portal-icon, .vx-portal-list__portal:hover .vx-portal-list__portal-description {
+    color: var(--font-dark);
+}
+
+
+/* Directory */
+
+.DirectoryEntrySearchForm_InputFilter {
+    border-color: var(--home-border) !important;
+    background: var(--darker-background);
+    color: var(--font-light);
+}
+
+.DirectoryCard:last-child {
+    border-bottom-color: var(--home-border);
+}
+
+.DirectoryCard:hover {
+    background: var(--dark-background);
+    border-top-color: var(--home-border);
+    border-right-color: var(--home-border);
+    border-bottom-color: var(--home-border);
+}
+
+.DirectoryCard {
+    background: var(--darker-background);
+    border-top-color: var(--home-border);
+    border-right-color: var(--home-border);
+}
+
+.DirectoryCategoryCard {
+    background: var(--darker-background);
+}
+
+.DirectoryCategoryCard_CategoryName {
+    color: var(--font-light);
+}
+
+.DirectoryCategoryCard_DirectoriesCount {
+    color: var(--font-label);
+}
+
+.DirectorySection_Title {
+    color: var(--font-label);
+}
+
+.DirectoryCard_FieldValue {
+    color: var(--font-darker);
+}
+
+.DirectoryCard_FieldLabel {
+    color: var(--font-darkest);
+}
+
+.DirectoryEntrySearchForm {
+    border-bottom-color: var(--home-border);
+}
+
+.vx-tab-bar__tab--active {
+    border-bottom-color: var(--home-border) !important;
+}
+
+.DirectoryEntries_DirectoryEntriesGroup {
+    border-color:  var(--home-border);
+}
+
+.directory-Entry {
+    border-color: var(--home-border);
+}
+
+.DirectoryEntriesGroup_GroupName  {
+    color: var(--font-selected);
+}
+
+.directory-Entry_Title {
+    color: var(--font-light);
+}
+
+.directory-Entry_FieldTitle {
+    color: var(--font-darker);
+}
+
+.directory-Entry_FieldTitle--blue {
+    color: var(--font-darker);
+}
+
+.directory-Entry_FieldLabel {
+    color: var(--font-darkest);
+}
+
+.item-sm--auto {
+    border-color: var(--home-border) !important;
+}
+
+.directory-Entry_FieldLink {
+    color: var(--blue-night);
+}
+
+.directory-Entry_Tag {
+    color: var(--font-light);
+    background: var(--lavender-background);
+}
+
+.DirectoryTabBar_PageType {
+    color: var(--font-darkest);
+}
+
+.recent-updates .item-detail-data {
+    color: var(--font-darker);
+}
+
+.recent-updates .item-detail-label {
+    color: var(--font-darker);
+}
+
+.recent-updates .item-detail-icon {
+    color: var(--font-darkest);
+}
+
+/* Messages */
+
+.messages .message:hover {
+    background-color: var(--darker-background);
+}
+
+.messages .message {
+    color: var(--font-light);
+}
+
+.messages .message-from {
+    color: var(--font-light);
+}
+
+.messages .message-link {
+    color: var(--font-light);
+}
+
+.messages .message-date-sent {
+    color: var(--font-darkest);
+}
+
+.vx-button:hover {
+    background: var(--selected-background);
+    color: var(--font-light);
+    transition: all 0.3s ease-out;
+}
+
+.messages-people .person .name {
+    color: var(--font-light);
+}
+
+.messages-people .vx-avatar {
+    border-color: var(--home-border);
+}
+
+.messages-people .people-group-header {
+    border-color: var(--home-border);
+}
+
+.messages-people .person.unread::after {
+    border-color: var(--home-border);
+}
+
+.messages-categories .channel-link {
+    color: var(--font-light);
+}
+
+.messages-categories .category-group-header {
+    border-color: var(--home-border);
+}
+
+.vx-record-header {
+    background-color: var(--darker-background); 
+}
+
+.vx-record-header__type {
+    color: var(--font-darkest);
+}
+
+.detail-email .small-data-field {
+    color: var(--font-light);
+}
+
+.detail-email .vx-record-body {
+    border-color: var(--home-border);
+}
+
+table.main-background {
+    background: var(--darkest-color) !important;
+}
+
+table.main:nth-child(5) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1), table.main:nth-child(3) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) {
+    border-color: var(--home-border) !important;
+}
+
+.image-text > p:nth-child(2) > span:nth-child(3) > span:nth-child(2) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1), .image-text > p:nth-child(2) > span:nth-child(2) > span:nth-child(1) > strong:nth-child(1) > span:nth-child(1) > span:nth-child(1), table.main:nth-child(4) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > p:nth-child(1) > span:nth-child(1) {
+    color: var(--font-light);
+}
+
+table.main:nth-child(7) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > p:nth-child(1) > img:nth-child(1) {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+table.main:nth-child(7) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > p:nth-child(1) > a:nth-child(2) {
+    color: var(--blue-night) !important;
+}
+
+.vx-record-title-type {
+    color: var(--blue-day) !important;
+}
+
+.image-text {
+    color: var(--font-light) !important;
+}
+
 
 
 }
