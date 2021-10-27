@@ -1,7 +1,7 @@
 @-moz-document domain("veracross.com") {
 :root {
 --dark-background: #3a3943;
---darker-background:#2a2c39;
+--darker-background:#232531;
 --darkr-background: #17172b;
 --darkest-background: #1b1d23;
 --green-background: #0f5718;
@@ -1052,6 +1052,45 @@ table.main:nth-child(7) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1)
 }
 
 /* class pages */
+
+#discussions #discussion-feed .post h3 a.button.save {
+    background: transparent;
+}
+
+.button {
+    text-shadow: none;
+}
+
+textarea {
+    border-color: var(--home-border);
+    background-color: var(--darker-background);
+    color: var(--font-light);
+}
+
+#discussions #discussion-feed .post-content  {
+    border-color: var(--home-border);
+}
+
+#discussions #discussion-feed .post.new h3 {
+    background: transparent;
+}
+
+#discussions .discussion .discussion-metadata a:hover {
+    color: var(--blue-night);
+    opacity: 0.8;
+}
+
+#discussions .discussion .discussion-metadata a {
+    color: var(--blue-night);
+}
+
+#discussions.list .type {
+    background: transparent;
+}
+
+#discussions .discussion .discussion-metadata {
+    color: var(--font-label);
+}
 
 table.main:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1),  table.main:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1){
     position: relative;
