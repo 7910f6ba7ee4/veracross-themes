@@ -27,9 +27,14 @@
 --main-palette-border: #43a619;
 --main-palette-2: #0e4305;
 --main-palette-3: #1b6c00;
+--yellow: #f4871a;
 }
 
 /* Website */
+
+#nav .pdf {
+    color: var(--font-label);
+}
 
 .vx-nav-account {
     background: var(--main-palette);
@@ -251,6 +256,49 @@ h1, h2, h3, h4, h5, h6, .vx-heading-1, .vx-heading-2, .vx-heading-3, .vx-heading
 }
 
 /* Schedule */
+
+div.day:nth-child(3) > div:nth-child(1), div.day:nth-child(3) > div:nth-child(5), div.day:nth-child(3) > div:nth-child(7), div.day:nth-child(3) > div:nth-child(8), div.day:nth-child(3) > div:nth-child(9), div.day:nth-child(4) > div:nth-child(2), div.day:nth-child(4) > div:nth-child(6), div.day:nth-child(4) > div:nth-child(8), div.day:nth-child(5) > div:nth-child(4), div.day:nth-child(5) > div:nth-child(3), div.day:nth-child(5) > div:nth-child(6), div.day:nth-child(6) > div:nth-child(5), div.day:nth-child(6) > div:nth-child(7), div.day:nth-child(6) > div:nth-child(8), div.day:nth-child(6) > div:nth-child(9), div.day:nth-child(7) > div:nth-child(5), div.day:nth-child(7) > div:nth-child(7), div.day:nth-child(7) > div:nth-child(8), div.day:nth-child(7) > div:nth-child(9), div.day:nth-child(7) > div:nth-child(1)  {
+    background: var(--darker-background) !important;
+}
+
+div.day:nth-child(7) > div:nth-child(12), div.day:nth-child(7) > div:nth-child(2), div.day:nth-child(7) > div:nth-child(3), div.day:nth-child(6) > div:nth-child(1), div.day:nth-child(6) > div:nth-child(2), div.day:nth-child(6) > div:nth-child(3), div.day:nth-child(6) > div:nth-child(4), div.day:nth-child(5) > div:nth-child(2), div.day:nth-child(5) > div:nth-child(5), div.day:nth-child(5) > div:nth-child(7), div.day:nth-child(5) > div:nth-child(8),   div.day:nth-child(3) > div:nth-child(2), div.day:nth-child(3) > div:nth-child(11), div.day:nth-child(3) > div:nth-child(12), div.day:nth-child(4) > div:nth-child(5), div.day:nth-child(4) > div:nth-child(9), div.day:nth-child(4) > div:nth-child(10), div.day:nth-child(4) > div:nth-child(11) {
+    background: var(--yellow) !important;
+    color: black !important;
+}
+
+#document .block {
+    border: none;
+}
+
+#document .day {
+    background: var(--darker-background);
+}
+
+#document #paragraphs {
+    color: var(--font-light);
+}
+
+#document #times li {
+    color: var(--font-light);
+}
+
+
+html body#page div#container div#document {
+    background: var(--darkest-background);
+}
+
+html body#page div#container {
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0 3px 10px var(--home-border);
+    
+}
+
+html body#page {
+    margin: 0 0 0 0;
+    background: var(--darkest-background);
+}
+
 .ae-grid__item {
     color: var(--font-light);
 }
@@ -959,6 +1007,11 @@ table.main:nth-child(7) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1)
 }
 
 /*  Home page */
+#discussions #discussion-feed .post h3 a.button {
+    background: var(--darkest-background);
+    color: var(--font-light);
+}
+
 .component-class-list-student .course  {
     border-color: var(--home-border);
 }
@@ -1098,7 +1151,7 @@ table.main:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1)
 }
 
 #container { 
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 10%;
 }
 
