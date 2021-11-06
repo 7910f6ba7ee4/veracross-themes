@@ -32,6 +32,10 @@
 
 /* Website */
 
+.vx-FormControl .vx-TextField_Input, .vx-FormControl .vx-DateField_Input, .vx-FormControl .vx-TimeField_Input, .vx-FormControl .vx-NumberField_Input, .vx-FormControl .vx-SearchField_Input, .vx-FormControl .vx-TextArea_Input {
+    border-color: var(--home-border);
+}
+
 #nav .pdf {
     color: var(--font-label);
 }
@@ -1584,4 +1588,33 @@ html body.custom.chromeless div#container div#main div#main-content div.messages
  
  
 
+}
+
+@-moz-document url-prefix("https://accounts.veracross.com") {
+body {
+    background-color: var(--darkest-background);
+}
+
+#username, #email_address {
+    background-color: var(--dark-background);
+    color: var(--font-light);
+}
+
+.vx-Button.vx-Button--neutral:hover, .vx-Button.vx-Button--neutral {
+    background: var(--blue-night);
+    border-color: var(--home-border);
+    color: var(--font-light);
+}
+
+.card-footer a, .vx-FormLabel, .card-header-title2 {
+    color: var(--font-darkest) !Important;
+}
+
+.card {
+    background-color: var(--darker-background);
+}
+
+.school-name {
+    color: var(--blue-night);
+}
 }
